@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> listas com suporte HTML5</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+<h1>Listas</h1>
+<h2> listas ordenadas</h2>
+<p>
+    são aquelas em que a ordem dos itens são muito importantes. seria tipo uma receita passo-passo de um bolo.Para fazer uma lista ordenada usarei a tag ol de ordered list junto com a tag li de list item.
+
+</p>
+ <p>
+    <ol>
+        <li>item 1</li> 
+        <li>item 2</li>
+    </ol> 
+    <p> eu posso tambem usar um parametro type dentro da tag ol para configura o marcador da lista , <strong><ins>que tem por padrao o tipo 1 que cria uma lista numeriaca como no exemplo acima, mas a outros como A, que cria uma lista alfabetica maiuscula , a que cria uma lista alfabética minuscula, I que cria uma lista com algorismos romanos maiusculos e i que cria uma lista com algorismos romanos minusculos</ins></strong>
+    </p> 
+</p>
+<p>
+    exemplo 2 <br> 
+    <ol 
+       type="I"><li>item 1</li> <li>item 2 </li> <li> item 3</li> <li> item 4</li>
+    </ol>
+</p>
+    <p> 
+        eu posso mistura uma lista dentro da outra. <br> exemplo 3 <br> 
+        <ol type="I">
+            <li>item 1</li> 
+            <li>item 2 </li>
+               <ol type="i"> 
+                <li> item 2.1 </li>
+                <li> item 2.2 </li>
+               </ol> 
+            <li> item 3</li>
+            <li> item 4</li>
+        </ol> 
+    </p>
+<p> 
+    alem disso consigo usar o paramentro start dentro da tag ol para indicar onde a contagem do marcador irá começar. <br> exemplo 4 <br> 
+    <ol type="1" start="6"> 
+        <li> item A</li>
+        <li> item B </li>
+    </ol>  
+</p> 
+<h2> lista não ordenada</h2>
+<p> 
+    é o inverso da ordered list, onde a ordem dos itens não afetará o significado da lista, aqui usarei a tag ul de unordered list junto com a mesma tag li para identificar os itens da lista . eu posso usar nas listas nao ordenadas o parâmetro type so que com tipos diferente para as não ordenadas, <strong><ins> disc é o padrao e fará a marcação com uma bola totalmente preta, circle fará uma bola com as bordas pretas e sem preenchimento interno, e por ultimo square que fará uma quadrado pintado de preto. </ins></strong>
+</p>
+ <p> exemplo 5 <br> 
+    <ul>
+        <li> cenoura</li>
+        <li> abacate</li>
+        <li> limão</li>
+    </ul> 
+    <br> exemplo 6 <br> 
+    <ul type="circle">
+        <li> cupuaçu</li>
+        <li> laranja</li> 
+        <li> peixe</li>
+        <li> açai</li>
+    </ul>
+</p>
+<h2> lista de definições </h2>
+<p> 
+    é tipo um dicionário, onde não a marcações como nas ordered list e unordered list, e possui um termo e sua defição. para fazer as listas de definições usarei primeiro a tag dl (defition list), apos ela usarei a tag dt(definition term) e depois a tag dd(definition description) onde irei colocar a definição do termo que coloquei na tag dt
+</p> 
+<p> 
+    exemplo 7 <br>
+    <dl>
+        <dt>html</dt>
+          <dd>hypertext markup language</dd>
+        <dt> CSS</dt> 
+          <dd> cascading style sheets</dd>
+    </dl>
+</p>
+</body>
+</html>

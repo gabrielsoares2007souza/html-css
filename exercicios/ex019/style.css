@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 
+   em html id é igual a # nas CSS
+   em html class é igual a . nas CSS
+   obs: sempre fazer o style dos genéricos, depois ir pro individual.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Revalia&display=swap');
+
+body{
+    background-color: #0a4d5ab2;
+    font-family: "Revalia", sans-serif;
+    font-size: 0.9em;
+
+}
+
+h1{
+    color: #0E5D6F;
+    font: normal bold 1.9em "Revalia", sans-serif; ;
+}
+
+h2{
+    color: #1796B3 ;
+}
+
+p{
+    color:#21D8FF ;
+}
+
+#principal{
+    color: #DE9621;
+    background-color: hsla(37, 73%, 29%, 0.712);
+    text-align: center;
+    font-size: 2.5em;
+    
+}
+
+.basico{
+    color: hsl(0, 80%, 21%);
+}
+.intermediario{
+    color: hsl(108, 80%, 21%);
+}
+.avancado{
+    color: hsl(64, 80%, 21%);
+}

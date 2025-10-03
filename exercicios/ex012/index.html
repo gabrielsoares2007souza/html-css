@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos internos e externos</title>
+</head>
+<body>
+    <h1> videos internos</h1>
+    <p>
+        para adicionar videos internos que consomem dentro da hospedagem do meu próprio site não é uma escolha economicamente viável, pois isso irá gerar um alto valor na hospedagem do site pelo alto consumo de dados que esses videos geram. para colocar ele basta usar a tag video e fazer de forma semelhante com os audios, onde também há duas formas, e tem aqueles mesmos parâmetros, com o acrescimo dos parâmetros poster que coloca a thumbnail quando o video estiver parado e width que muda a largura e comprimento do video no site, olhe o exemplo abaixo.
+    </p>
+    <video controls loop width="500" preload="metadata" poster="imagens/LARANJA-menor.png" src="midias/meu video-mp4.mp4"></video>
+    <br> 
+    <video controls loop width="500" poster="imagens/LARANJA-menor.png" preload="metadata">
+        <source src="midias/meu video-m4v.m4v" type="video/mp4">
+        <source src="midias/meu video-mp4.mp4" type="video/mp4">
+        <source src="midias/meu-video-webm.webm" type="video/webm">
+        <source src="midias/meu-video-ogv.ogv" type="video/ogg">
+        <p>
+            arquivo não encontrado, <a href="midias/meu video-mp4.mp4" rel="external" target="_blank">clique aqui para assistir</a>
+        </p>
+    </video>
+    <h1>videos externos</h1>
+    <p> Por videos de site ou app que tem por finalidade hospedar videos é uma opção mais econômica do que hospedar em seu próprio site, porque ele não vai está consumindo dados da sua hospedagem, mas sim do proprio site na qual ele veio. os principais hospedeiros são o youtube e vimeo, onde o vimeo se diferencia por conseguir limitar o acesso a conteudo e traz funcionalidade mais profissionais para o mercado. para por esses videos externos basta ir no site escolher o video apertar em compartilhar e lá ir em iincorporar onde irá gerar um código html pronto pra ser copiado e colado dentro do editor de codigos.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=aie-EvHoDJcOyYqy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

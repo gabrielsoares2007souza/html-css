@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(180, 241, 241);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+h1{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2em;
+}
+#paragrafo-principal{
+    color: rgb(255, 255, 255);
+    background-color: hsl(120, 82%, 15%);
+}
+.link-especial{
+    text-decoration: none;
+    color: rgb(19, 107, 107);
+}
+.link-especial:hover{
+    color: hsl(0, 25%, 49%);
+    text-decoration: underline;
+}
+.link-especial::after{
+    content: ' [Vem tranquilo]';
+}
+div>.zueira{
+    display:none;
+}
+div:hover>.zueira{
+    display: block;
+}
+.zueira::before{
+    content: 'Time pequeno!!!!!! ';
+}url(youtube.com)
+.zueira::first-letter{
+    color: green;
+    font-size: 2em;
+}
+.link-especial:active{
+    background-color: blue;
+}

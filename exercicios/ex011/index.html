@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1> Imagens flexiveis</h1>
+    <p> para fazer com que uma imagem se adapte ao tamanho do aparelho e dispense a utilização da barra de rolagem utilizaremos a tag &lt;picture&gt; e dentro dessa tag colocarei a imagem <strong>principal</strong> coma a tag &lt;img&gt;, e em cima dela irei colocar as outras imagens dentro da tag &LT;source media&gt; na ordem do menor para o maior. <ins><strong>Veja o exemplo a abaixo mudando o tamanho da janela do navegador.</strong></ins> </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="foto grande">
+    </picture>
+    <h1> Reproduuzindo audios</h1>
+    <p>
+        Para reproduzir audios há duas maneiras. A primeira onde utiliza-se a tag audio e põe o arquivo do audio dentro do parâmetro que já vem dentro da tag. E a outra é colocando a tag audio e apagando os parametros e colocando a tag source src, se atentando a por na ordem do audio principal pois oque estiver em primeiro dentro da tag audio será oq o navegador tentará abrir, se não conseguir ele irá pro outro audio em formato diferente. 
+        <p>
+            tem parâmetros para se por dentro da tag audio
+            <ul>
+                <li> <abbr title="determina se o dispositivo irá baixar as informações do audio todo[auto],parcial(informacões de duração, arquivo e coisas basicas, mas o coteúdo em si será baixado se o controls for acionado)[metadata], ou nenhum(so quando o usuário aperta no controls)[none] ">proload</abbr></li>
+                <li> <abbr title="o audio se´ra iniciado assim que o navegador abrir abrir o site ou página, mas a depender do navegador esse parâmetro não funciona">autoplay</abbr></li>
+                <li><abbr title="quando o audio terminar será reniciado">loop</abbr></li>
+                <li><abbr title=" botão que montra a duração do audio, permite que possar paralisar, voltar ou avançar no audio">controls</abbr></li>
+            </ul>
+        </p>
+    </p>
+    <p>
+        quanto ao formato dos audios depende dos navegadores mas em geral são mp3, ogg e wav, mas cuidado com os audio em wav pois são muito pesados.
+    </p>
+    <p>
+        exemplo 1 
+    </p>
+    <audio src="midias/GTA Type Beat - Dyalla.mp3" controls preload="metadata" loop ></audio>
+    <P>
+        exemplo 2
+    </P>
+    <audio controls loop proload="metadata">
+        <source src="midias/Not Without the Rest - Twin Musicom.mp3" type="audio/mpeg">
+        <source src="midias/GTA Type Beat - Dyalla.oog" type="audio/ogg"> 
+        <source src="midias/GTA Type Beat - Dyalla.wav" type="audio/wav">
+         não conseguiu ouvir os aúdios? baixe eles aqui: <br> <a href="midias/GTA Type Beat - Dyalla.mp3" target="_blank" rel="external">primeiro aúdio</a> <br> <a href="midias/Not Without the Rest - Twin Musicom.mp3" target="_blank" rel="external">segundo aúdio</a>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica</title>
+    <link rel="shortcut icon" href="imagem/logo html-200.webp" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(118, 190, 108);
+        }
+        p{
+            font-size:13pt;
+            color:rgb(255, 255, 255);
+            font-family: Arial;
+        }
+        h2{
+            font-size:20pt;
+        }
+        h1{
+            font-size:25pt ;
+        }
+    </style>
+    <h1>
+        O estudo da semântica em HTML5
+    </h1>
+    <hr>
+    <p>
+        semântica é o estudo do significado dos vocábulos, e uma palavra possui forma e significado. O html4 possui várias tags com pouco valor semantico e maior valor de forma( visual ), com o html5 a w3c tem priorizado criar tags com maior valor semântico e deixar obsoleto as tags com pouco valor semântico, deixando a parte do visual (forma) para as folhas de estilo da CSS.
+        <p> 
+            por exemplo, na html4 se eu quissese dar enfâse em um endereço eu iria usar a tag u para sublinhar, já com o html tem a tag adress que possui maior valor semântico, se eu quiser que o endereço fique sublinhado eu posso fazer isso pelas folha de estilo da CSS.
+            <p>
+                Alé disso muitas tags ficaram "mortas" com o html5, como as tags strike,blink,font e center e outras.
+            </p>
+        </p>
+    </p>
+    <h2>
+        texto em negrito e itálico
+    </h2>
+    <p>
+        Para deixar em negrito eu utilizo a tag strong e para itálico a tag em de emphasis. No html era a tag b para negrito e tag i para itálico, mas por possuirem pouco valor semântico a propria w3c recomenda para de usa-las.
+    </p>
+    <p>
+        exemplo <br> <b> isso está em negrito com a tag de pouca semantica, <ins>tag b </ins> </b> <br> <strong>já esse aqui está em negrito com a tag strong</strong>
+    </p>
+    <h2>
+        Marcações (Marca-Texto)
+    </h2>
+    <p>
+        para fazer marcações em texto usa-se a tag mark, e para mudar a cor da marcação ira se fazer isso com a folha de estilo da CSS.
+    </p>
+    <p>
+        exemplo <br> <mark style="background-color: blueviolet;">eu estou fazendo essa marcação aqui.</mark>
+    </p>
+    <h2>
+        Texto Deletado
+    </h2>
+    <p>
+        Para exclui um texto existia a tag strike, mas ela está obsoleta. com a html5 tem-se a tag del que basicamente indica que o texto irá está ali mas nao deve ser considerado pelo leitor.
+        <p>
+            exemplo <br> Eu irei utilizar a tag del agora, <del> a tag strike está obsoleta</del> viu!!!.
+        </p>
+    </p>
+    <h2>
+        texto inserido
+    </h2>
+    <p>
+        O texto inserido é o contrário da tag del, onde ira se utilizar a tag ins, na qual irá fazer o mesmo papel a tag com pouca semantica u (sublinhando), mas a semantica da tag ins é que o texto ali presente deve ser lido e deve presta atenção nele.
+    </p>
+    <p>
+        exemplo <br> <ins> o texto aqui deve ser lido com atenção!</ins>
+    </p>
+    <h2>
+        texto sobrescrito
+    </h2>
+    <p>
+        Quando eu quiser colocar algo emcima de outro utilizarei a tag sup, para fazer algo parecido com x²+4³, entendeu?, a tag sup serve para colocar os numeros 2 e 3 por exemplo.
+        <p>
+            exemplo <br> a equação x <sup>40</sup>+100 é uma equação de conta grande.
+        </p>
+    </p>
+    <h2>
+        texto subscrito
+    </h2>
+    <p>
+        Quando eu quiser fazer algo parecido com H2O por exemplo só que com o 2 embaixo eu irei usar a tag sub.
+        <p>
+            exemplo <br> H <sub>2</sub>O é a fórmula da água.
+        </p>
+    </p>
+    <h2>
+        Trecho de codigo
+    </h2>
+    <p>
+        Quando eu trazer um codigo de linguagem de programação para meu codigo html eu usarei as tag code e pre, onde a tag code indica ao navegador que oq estiver entre aquela tag irá ser um codigo de liguagem de máquina, já a tag pre faz com que o codigo que eu trazer permaneça com a sua pre-formatação, permaneçendo as quebra-linhas, espaços e tabulações, basicamente para que o código permaneça com a sua forma original na qual foi digitado.
+        <p>
+            <pre>
+                <code>
+    try:
+    numero = int(input("Digite um número inteiro: "))
+    # Verifica se o número é par ou ímpar
+    if numero % 2 == 0:
+    print(f"O número {numero} é par.")
+    else:
+    print(f"O número {numero} é ímpar.")
+    except ValueError:
+    print("Por favor, digite um número inteiro válido.")
+                </code>
+            </pre>
+        </p>
+    </p>
+    <h2>
+        citações
+    </h2>
+    <p>
+        As citações são coisas ditas ou escritas por outra pessoa que ilustra muito bem o que eu quero explicar. Geralmente as citações vem com um espaçamento nas margens e vem com aspas. Para fazer uma citação usarei a tag q que vem do inglês quote que significa citar. a tag q colocar aspas automaticamente mas não põe o espaçamento nas margens. para citações longas e que apareçam em um parágrafo só pra elas, tem a tag blockquote. Eu consigo tambem por o paramentro cite dentro das tags de citação para por o link para o texto original da citação.
+        <p>
+            exemplo1 <br> a citação de fernando pessoa <q cite="https://www.pensador.com/frase/MTc4/"> Tudo vale a pena quando a alma não é pequena.</q> . <br> exemplo 2 <br> a citação de augusto cury onde ele fala <blockquote cite="https://www.pensador.com/frase/MjQzNzQxNA/"> 
+                Ame como a chuva fina, que cai silenciosa, mas que é capaz de transbordar rios. Ame como quem sabe que a vida é breve, e que cada momento de amor é um tesouro a ser guardado na memória. Ame sem esperar nada em troca, pois o verdadeiro amor está no ato de amar, e não na recompensa que se possa obter. Ame com a certeza de que o amor é a força mais poderosa do universo, capaz de curar feridas, de unir corações e de transformar o mundo num lugar melhor.</blockquote>
+        </p>
+    </p>
+    <h2>
+        Abreviação
+    </h2>
+    <p>
+        eu posso abreviar algo e mostrar o significado da abreviação quando eu passar com o mouse por cima da abreviação. Para isso usarei a tag abbr junto com o paramentro title. 
+        <p>
+            exemplo <br> <abbr title="hyper text markup language"> HTML</abbr> é uma linguagem baseada em tag ou marcações, <ins> OBS:</ins> <strong><em> Não é uma linguagem de programação</em></strong>
+        </p>
+    </p>
+    <h2> 
+        Texto invertido
+    </h2>
+    <p> 
+        se eu quiser colocar um texto no sentido contrário <strong> É <ins>inútil</ins></strong> ,mas para isso usarei a tag bdo que vem de bi-directional override, usarei essa tag com o parâmetro dir que indica uma das duas possiveis direções que o texto pode ter , sendo elas ltr(left to right) ou rtf(right to left).
+        <p>
+            exemplo <br> <bdo dir="rtl"> AMBULANCIA A FRENTE</bdo>
+        </p>
+    </p>
+</body>
+</html>

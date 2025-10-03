@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link dentro de um site</title>
+</head>
+<body>
+    <h1> HIPERLINKS</h1>
+    <p>
+        Para eu colocar um hiperlink basta usar a tag a de ancora. Toda vez que eu estiver usando um site e ao apertar em algum canto ele me direciona à outro site ou outra pagina do próprio site, eu estou interagindo com um hiperlink.
+        <p>
+            O principal parâmetro dessa tag é o href que é onde eu irei colocar a url do site a qual eu queira redirecionar. outro parâmetro importante é o hreflang que indica o idioma do site e já informa ao navegador se vai precisar traduzir 
+        </p>
+        <p>
+            exemplo 1 <br> <a href="https://youtu.be/xLo-er44SuI" hreflang="en" target="_self"> clique aqui para assistir meu video no youtube </a>
+        </p>
+        <p>
+            por padrão, sempre que o usuário abre um hiperlink no site, será aberto o site ou a pagina do link na mesma pagina onde eu estava, isso é o padrão, mas á parâmetros para mudar isso.
+            <dl>
+                <dt><em><mark style="background-color: greenyellow;">_blank</mark></em></dt>
+                <dd> <strong><ins>usado para abrir o link em outra janela em branco</ins></strong> </dd>
+                <dt><em><mark style="background-color:greenyellow;">_self</mark></em></dt>
+                <dd> <strong><ins>é o padrão onde o link irá ser aberto na janela atual ou frame atual</ins></strong></dd>
+                <dt><em><mark style="background-color:greenyellow;">_top</mark></em></dt>
+                <dd> <strong><ins>desfaz todos os frames e abri em um destino com o navegador completo</ins></strong></dd>
+                
+            </dl>
+            <p style="font-size: 20pt; color:red;">
+                o uso de flames está em desuso, os principais são os _blank e _self, para colocar isso utiliza-se o parâmetro target
+            </p>
+            <p>
+                exemplo 2 <br> <a href="https://youtu.be/8TgKFYkcO5Y?si=JtBYZIX9oc7rcXHe" target="_blank"> clique aqui para acessar o video do guanabara.</a>
+            </p>
+        </p>
+    </p>
+    <h1> E se o link for meu? E se for de outra pessoa?</h1>
+    <p>
+        existe um parâmetro chamado rel que é sobre a natureza do destino do link. 
+        <dl>
+            <dt>next</dt>
+            <dd> indica que o link é para a próxima parte do documento atual</dd>
+            <dt>prev</dt>
+            <dd> indica que o link é para uma parte anterior à parte do documento atual</dd>
+            <dt>author</dt>
+            <dd> indica que o link é para o site do autor do material</dd>
+            <dt>external</dt>
+            <dd> indica que o link é para outro site que não faz parte do site atual</dd>
+            <dt>nofollow</dt>
+            <dd> indica que é um link que não se sabe a procedência.</dd>
+        </dl>
+        <p>
+            quando for link internos do meu proprio site eu não preciso digitar a url completa, basta apertar crtl+esp. já quando for links externos se faz necessário a url completa no parâmetro href.
+        </p>
+        <p>
+            exemplo 3 <br> 
+            <a href="https://play.geforcenow.com/mall/" target="_blank" rel="external"> acesse o site da geforcenow</a> <br>
+            <a href="https://youtu.be/Jszz7M676y8?si=oNd-8mloz0eJ3AH8" target="_self" rel="author"> acesse o video do guanabara</a> <br>
+            <a href="https://youtu.be/fYJl-7jRzuw?si=V8o6gedr2ntYdwYf" target="_blank" rel="nofollow"> acesse o video do manual do mundo</a> <br>
+            <a href="pagina 002.html" target="_self" rel="next"> acesse aqui a segunda página do site</a> <br>
+            <a href="pasta teste/pagina003.html" target="_self" rel="next"> acesse aqui a página número 3 do site</a> <br>
+        </p>
+
+    </p>
+    <h1> downloads </h1>
+    <p>
+        para fazer downloands de algum arquivo em vários formatos, pdf, zip etc... , tem o parâmetro download que se coloca dentro da tag a de link na qual é usado para por o nome do arquivo na pasta, logo é só da crtl+esp , além dele tem o parãmetro type que tambem se coloca na tag a e serve pra indicar ao navegador que tipo de arquivo que será baixado
+    </p>
+    <a href=" file:///C:/Users/gabri/Downloads/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_blank" rel="external" type="application.pdf"> acesse o pdf da aula do capitulo 10 modulo 1 html5 e css3</a>
+    <p> <ins><strong> atenção : os media types possuem cada tipo para cada arquivo , como por exemplo o pdf é application.pdf</strong></ins></p>
+</body>
+</html>

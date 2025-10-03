@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h1>IMAGENS FLEXIVEIS</h1>
+    <p>
+        olhe a imagem abaixo e mude o largura do seu navegador para perceber a imagens mudando de tamanho sozinha.
+    </p>
+    <picture>
+        <source media="(max-width:550px )" srcset="imagens/foto-300.jpg">
+        <source media="(max-width:950px)" srcset="imagens/foto-400.jpg">
+        <img src="imagens/foto-600.jpg" alt="foto natureza">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            /* 
+            medidas absolutas
+            cm,mm,in,px,pt,pc
+
+            medidas relativas
+            em,ex,rem,vw,vh,%
+
+            16px geralmente é o tamanho padão nos navegadores
+            16px=1em 
+            apartir dessa relação pode se fazer relações de equivalências
+            */
+            font-weight:bolder ;
+            /*
+            classificações da font-weight: ligther,normal,bold,bolder . Tambem tem classificações numericas que variam de 100 a 900, mas nem toda fonte terá variações com o peso numerico.
+            outro ponto é que as fontes padroes não possuem tantas variacoes assim, logo para esse caso utiliza na font-family 'Work Sans' e importar a url.
+            */
+            font-style: italic;
+            /*
+            como o html ficou com o conteúdo, as tags bold e i não sao mais tão utilizadas, principalmente a tag bold que está obsoleta. A custormização fica por conta das css. 
+            */
+            
+
+            /*
+            shorthanding font- é uma "mãozinha" pra facilitar a customização não necessitando declarar seletor por seletor, mas para isso deve seguir a ordem : font-style, font-weight, font-size e font-family. Mesmo se eu omitir um desse, deve seguir está ordem com os demais que forem colocados. 
+            */
+            font: italic bold 1em 'Work Sans', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+   <h1>Trabalhando com fontes em html</h1> 
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aperiam libero explicabo quis aliquid deserunt, cumque ipsa culpa laborum iusto iste et excepturi debitis tempore asperiores provident error eligendi sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia ut aspernatur! Tempore, ducimus facilis quibusdam amet beatae officia fugiat vero laboriosam voluptatibus velit eos, neque perferendis? Tempore, a. Numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde tempora quae nam, reprehenderit facere quo blanditiis animi, facilis ab incidunt necessitatibus. Velit numquam temporibus culpa nam inventore, ipsam aliquam!
+   </p>
+   <h2>Subtítulo do exercício</h2>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis architecto, et nobis exercitationem incidunt fugit repellendus quos dolorum esse, maxime illum minima nulla libero facilis praesentium odio soluta rem veniam.</p>
+</body>
+</html>

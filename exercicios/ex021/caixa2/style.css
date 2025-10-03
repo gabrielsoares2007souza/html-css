@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.conteudo-principal{
+    text-align: justify;
+    background-color: #D6D58E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    width: 500px;
+    height: 350px;
+}
