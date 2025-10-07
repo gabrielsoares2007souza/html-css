@@ -51,17 +51,27 @@ section > p {
     font-family: var(--fonte2);
     font-size: 4.5vw;
     line-height: 2em;
-    padding-bottom: 20px ;
+    padding-bottom: 40px ;
 }
 section.normal{
     background-color: white;
 }
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.459);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 25px -4px black
 }
 section.imagem>p{
-    background-color: rgba(56, 52, 52, 0.219);
+    background-color: rgba(56, 52, 52, 0.185);
     display: inline-block;
+}
+section#img1{
+    background-image:url(../imagens/background001.jpg) ;
+    background-position: center center;
+}
+section#img2{
+    background-image: url(../imagens/background002.jpg);
 }
 footer{
     color: white;
