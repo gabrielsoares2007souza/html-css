@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas maiores</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 850px;
+        }
+        table :where(th, td){
+            padding: 5px 15px;
+        }
+        thead>tr>th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tbody :where(td){
+            border: 1px solid black;
+        }
+        .especial{
+            color: rgb(35, 105, 211);
+            text-align: left;
+        }
+        .especial:hover{
+            text-decoration: underline;
+        }
+        .c2{
+            font-weight:bolder ;
+            text-align: center;
+        }
+        tbody :where(td){
+            text-align: center;
+        }
+        tfoot, thead{
+            background-color: gray;
+        }
+        tfoot :where(th, td){
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Trabalhando com tabelas maiores</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade federativa</th>
+                <th>Área (Km²)</th>
+                <th> % do brasil</th>
+                <th>País comparável</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="especial">Amazonas</td>
+                <td>1 559 167,889</td>
+                <td>18,321</td>
+                <td class="especial">Mongolia</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="especial">Pará</td>
+                <td>1 245 870,798</td>
+                <td>14,64</td>
+                <td class="especial">Angola</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="especial">Mato Grosso</td>
+                <td>903 207,019</td>
+                <td>10,613</td>
+                <td class="especial">Venezuela</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="especial">Minas Gerais</td>
+                <td>586 521,123</td>
+                <td>6,892</td>
+                <td class="especial">Madamascar</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="especial">Bahia</td>
+                <td>564 760,427</td>
+                <td>6,636</td>
+                <td class="especial">França</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="especial">Mato Grosso do sul</td>
+                <td>357 145,534</td>
+                <td>4,197</td>
+                <td class="especial">Alemanha</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="especial">Goiás</td>
+                <td>340 203,329</td>
+                <td>3,998</td>
+                <td class="especial">firlândia</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="especial">Maranhâo</td>
+                <td>329 642,182</td>
+                <td>3,873</td>
+                <td class="especial">Vietnâ</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="especial">Rio Grando do Sul</td>
+                <td>281 707,156</td>
+                <td>3,31</td>
+                <td class="especial">Equador</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="especial">Tocantins</td>
+                <td>277 466,763</td>
+                <td>3,26</td>
+                <td class="especial">Burkina Faso</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="especial">Piauí</td>
+                <td>251 756,515</td>
+                <td>2,958</td>
+                <td class="especial">Guiné</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="especial">São Paulo</td>
+                <td>248 219,481</td>
+                <td>2,917</td>
+                <td class="especial">Reino Unido</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="especial">Rondônia</td>
+                <td>237 765,24</td>
+                <td>2,794</td>
+                <td class="especial">Laos</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class="especial">Roraima</td>
+                <td>223 664,527</td>
+                <td>2,628</td>
+                <td class="especial">Guiana</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="especial">Paraná</td>
+                <td>199 298,979</td>
+                <td>2,342</td>
+                <td class="especial">Quirguistão</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class="especial">Acre</td>
+                <td>164 123,964</td>
+                <td>1,929</td>
+                <td class="especial">Suriname</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class="especial">Ceará</td>
+                <td>148 894,441</td>
+                <td>1,75</td>
+                <td class="especial">Bangladesh</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class="especial">Amapá</td>
+                <td>142 470,762</td>
+                <td>1,674</td>
+                <td class="especial">Tajiquistão</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class="especial">Pernambuco</td>
+                <td>98 067,881</td>
+                <td>1,152</td>
+                <td class="especial">Coreia do Sul</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td class="especial">Santa Catarina</td>
+                <td>95 730,684</td>
+                <td>1,125</td>
+                <td class="especial">Portugal</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td class="especial">Paraíba</td>
+                <td>56 467,242</td>
+                <td>0,664</td>
+                <td class="especial">Croácia</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td class="especial">Rio Grande do norte</td>
+                <td>52 809,602</td>
+                <td>0,621</td>
+                <td class="especial">Bósnia e Herzegovina</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td class="especial">Espírito Santo</td>
+                <td>46 074,447</td>
+                <td>0,541</td>
+                <td class="especial">Estônia</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td class="especial">43 750,427</td>
+                <td>0,514</td>
+                <td></td>
+                <td class="especial">Dinamarca</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td class="especial">Alagoas</td>
+                <td>27 848,140</td>
+                <td>0,327</td>
+                <td class="especial">Albânia</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td class="especial">Sergipe</td>
+                <td>21 925,424</td>
+                <td>0,258</td>
+                <td class="especial">El Salvador</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td class="especial">Distrito Federal</td>
+                <td>5 760,783</td>
+                <td>0,068</td>
+                <td class="especial">Brunei</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td class="especial"><strong>Brasil</strong></td>
+                <td class="c2"> 8 510 298,914</td>
+                <td class="c2">100</td>
+                <td> <strong class="especial">Brasil</strong> (8 510 296)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
