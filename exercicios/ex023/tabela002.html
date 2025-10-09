@@ -12,13 +12,25 @@
         table{
             border-collapse: collapse;
             width: 850px;
+            position: relative;
         }
         table :where(th, td){
             padding: 5px 15px;
         }
+        table>caption{
+            font-variant: small-caps;
+            font-size: 1.5em;
+            background-color: #9c9c9c;
+            color: white;
+            padding: 10px;
+            box-shadow: 0px -1px 2px 0px #9c9c9c ;
+        }
         thead>tr>th{
             border: 1px solid black;
             padding: 8px;
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         tbody :where(td){
             border: 1px solid black;
@@ -37,7 +49,15 @@
         tbody :where(td){
             text-align: center;
         }
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
+        }
         tfoot, thead{
+            background-color: gray;
+        }
+        tfoot :where(th, td){
+            position: sticky; 
+            bottom: -1px;
             background-color: gray;
         }
         tfoot :where(th, td){
@@ -48,13 +68,14 @@
 <body>
     <h1> Trabalhando com tabelas maiores</h1>
     <table>
+        <caption>Área de cada unidade federativa</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</th>
-                <th>Área (Km²)</th>
-                <th> % do brasil</th>
-                <th>País comparável</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">Área (Km²)</th>
+                <th scope="col"> % do brasil</th>
+                <th scope="col">País comparável</th>
             </tr>
         </thead>
         <tbody>
@@ -250,7 +271,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="especial"><strong>Brasil</strong></td>
                 <td class="c2"> 8 510 298,914</td>
                 <td class="c2">100</td>
@@ -258,5 +279,26 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci minus, sit at harum hic dolorum distinctio molestias. Dignissimos ipsa tempore saepe id suscipit corrupti ut amet ea consequatur velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora, dicta nihil, magnam facilis ipsum officiis accusamus ipsam veniam, iusto repudiandae? Enim esse ea soluta sequi incidunt ipsam qui consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus assumenda ex, illum nam corrupti nostrum ducimus inventore quisquam dolorum voluptates quis expedita sequi voluptatum nemo optio. Nostrum, exercitationem est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae recusandae possimus ullam et reprehenderit laboriosam rerum numquam exercitationem accusantium animi cupiditate, expedita soluta, eum repellat quo obcaecati explicabo veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rerum ullam autem placeat pariatur soluta molestias necessitatibus, nulla cupiditate corrupti voluptatibus tenetur repellendus debitis quaerat reiciendis vel sint illum dicta.
+    </p>
 </body>
 </html>

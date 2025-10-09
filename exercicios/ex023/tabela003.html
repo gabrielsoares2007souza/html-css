@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de tabelas</title>
+    <style>
+        table{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+            border-collapse: collapse;
+            width: 300px;
+            height: 300px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de tabelas</h1>
+    <table>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td rowspan="2">c</td>
+        </tr>
+        <tr>
+            <!--aqui era a letra d-->
+            <td colspan="2">e</td>
+            <!--aqui era a letra f-->
+        </tr>
+        <tr>
+            <td>g</td>
+            <td colspan="2">h</td>
+            <!--aqui era a letra i-->
+        </tr>
+    </table>
+</body>
+</html>
