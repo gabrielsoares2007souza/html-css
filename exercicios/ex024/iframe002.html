@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo local dentro de iframe ou div</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 600px;
+            border: 3px dashed black;
+            display: block;
+            margin: auto;
+        }
+        .conteiner{
+            overflow-x: scroll;
+            overflow-y: scroll;
+            width: 600px;
+            height: 150px;
+            margin: auto;
+            border: 3px dashed black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: blueviolet;
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo local</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae vero enim sit sequi. Officiis, soluta consectetur illum reiciendis sunt totam alias doloribus deserunt ullam voluptatibus perspiciatis! Aspernatur ullam a animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, error architecto quisquam adipisci natus accusantium? Enim, sed inventore! Est a magni fugit explicabo, non porro dolorum architecto sed nobis? Exercitationem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam quos adipisci veritatis iste molestiae harum id officia, quaerat fugit? Vel amet, eveniet voluptatem qui corporis exercitationem vitae accusantium autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti, eos consectetur magnam aliquid eveniet nesciunt laborum? Nam quaerat minus, sint saepe in consequatur praesentium laborum, quas, iure eum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit soluta non amet nemo officiis minus omnis, porro facilis maxime sit accusantium sint minima repellendus quae quam veritatis recusandae ab!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis voluptate qui illo soluta officia blanditiis iure veritatis? Quasi, quo. Omnis, tenetur ullam minus cumque impedit voluptatum dolorum sunt fuga saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis expedita vitae eum nobis, natus nostrum, architecto sunt facere culpa sint veritatis non! Unde, numquam ab ratione repudiandae dolorem porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit repellat, commodi dolorem et facere odit tempore adipisci pariatur modi quod ea earum hic aperiam molestiae in, at molestias assumenda.</p>
+    <iframe src="paginasextras/pag001.html" frameborder="0">
+        <p>Que pena! <br> Seu navegador não é compatível com isso!!</p>
+    </iframe>
+    <h1>Conteúdo por div</h1>
+    <p>Iframes não são indexados corretamente pelo mecanismos de busca, logo em contúdos correlacionados com o resto do site é melhor aquela pagina e envelopa ela com div e usa os overflow-x e overflow-y</p>
+    <iframe src="paginasextras/pagina002.html" frameborder="0">
+        <p>Que pena! <br> Seu navegador não é compatível com isso!!</p>
+    </iframe> 
+    <p>Não é ideal que uma tabela que tenha forte relação ou qualquer outro tipo de conteúdo que tenha forte relação com o restante do documento fiquq dentro de um iframe,  pelo motivo citado acima, logo é melhor envelopar com uma div</p>
+    <br>
+     <div class="conteiner">
+         <table>
+            <caption>Vendas de produtos por mês</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40"</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>PlayStation 4</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Lava louças</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+     <p> Olhe! as duas tabelas estão iguais com mesma configuração mas a primeira eu fiz com iframe colocando outra pagina dentro dele, e na segunda eu trouxe o código da tabela e coloquei aqui e envelopei com div e fiz a mesma configuração da primeira</p>
+     <p>O efeito visual não muda mas a primeira tabela será prejudicada pelos mecanismos de busca </p>
+</body>
+</html>
