@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formularios </h1>
+    <div>
+        <label for="iniv">Nivel:</label>
+        <input type="range" name="niv" id="iniv" min="0" max="20" value="10" oninput="marc.innerHTML = Number(iniv.value)">
+    </div>
+    <div>
+        <output id="marc">0</output>
+    </div>
+</body>
+</html>
