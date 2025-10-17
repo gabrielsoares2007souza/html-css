@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* configurações gerais*/
+
+@media all {
+        *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        body, html{
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #233eff;
+    }
+    h1{
+        padding: 20px;
+        color: white;
+        text-shadow: 4px 4px 0px #0f1a6ea8 ;
+    }
+
+}
+/* configurações landscape*/
+
+@media screen and (orientation:landscape){
+        body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+}
+/* configurações portrait*/
+
+@media screen and (orientation: portrait){
+        body{
+        background-image: url(../imagens/cev-portrait.jpg);
+    }
+}
