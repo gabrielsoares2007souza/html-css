@@ -7,13 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=menu" rel="stylesheet" />
     <link rel="shortcut icon" href="imagens/icons8-menu-16.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/tablet.css">
-    <link rel="stylesheet" href="estilos/desktop.css">
-    <link rel="stylesheet" href="estilos/tv.css">
-    <link rel="stylesheet" href="estilos/telagrande.css">
-    <link rel="stylesheet" href="estilos/print.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
-<body>
+<body id="telatamanho" onresize="telaMudou()">
     <header>
         <h1>Menu Responsivo</h1>
         <span id="menu_burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -38,6 +34,14 @@
         </article>
     </main>
     <script>
+        function telaMudou(){
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (menu.style.display == 'block'){
                 menu.style.display = 'none'
