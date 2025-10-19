@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <main>
+        <div id="img"></div>
+        <h1>login</h1>
+        <p>Seja bem-vindo, faça login ou cria uma conta para acessar o app &#x1F642</p>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div class="caixa">
+                <label for="iusuario">
+                    <span class="material-symbols-outlined">
+                    person
+                    </span>
+                </label>
+                <input class="caixa-input" type="text" name="usuario" id="iusuario" autocomplete="email" placeholder="Usuário" required>
+            </div>
+            <div class="caixa">
+                <label for="isenha">
+                    <span class="material-symbols-outlined">
+                    Key
+                    </span>
+                </label>
+                <input class="caixa-input" type="password" name="senha" id="isenha" placeholder="Senha" required onclick="clicarInput()">
+            </div>
+            <input class="butao-entrar" type="submit" value="Entrar">
+            <input class="butao-redefinir-senha" type="button" value="Esqueci a senha &#x2709">
+        </form>
+    </main>
+</body>
+</html>
