@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to top, #3b311d, #866F44, #be9d5f );
+        }
+        main{
+            width: 650px;
+            height: 350px;
+            margin: auto;
+            top: 100px;
+        }
+        .img{
+            position: absolute;
+            left: 62%;
+            background-image: url(../imagens/img.jpg);
+            background-position: center top;
+            width: 250px;
+            height: 100%;
+            border-radius: 0px 30px 30px 0px;
+        }
+        main>h1{
+            text-align: left;
+            margin-left: 140px;
+
+        }
+        main>p{
+            width: 300px;
+            margin-left: 35px;
+            margin-top: 2px;
+        }
+        .caixa{
+            width: 320px;
+            margin-left:  35px;
+        }
+        .caixa-input{
+            width: 85%;
+        }
+        .butao-entrar{
+            width: 49.4%;
+            margin: 5px 35px;
+        }
+        .butao-redefinir-senha{
+            width: 49.4%;
+            margin: 0px 35px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to top, #3b311d, #866F44, #be9d5f );
+        }
+        main{
+            width: 850px;
+            height: 350px;
+            margin: auto;
+            top: 100px;
+        }
+        .img{
+            position: absolute;
+            left: 0%;
+            background-image: url(../imagens/img.jpg);
+            background-position: bottom center;
+            width: 45%;
+            height: 100%;
+            border-radius: 30px 0px 0px 30px;
+        }
+        main>h1{
+            text-align: left;
+            margin-left: 70%;
+
+        }
+        main>p{
+            width: 400px;
+            margin-left: 48%;
+            margin-top: 2px;
+        }
+        .caixa{
+            width: 386px;
+            margin-left:  430px;
+        }
+        .caixa-input{
+            width: 85%;
+        }
+        .butao-entrar{
+            width: 45.4%;
+            margin: 5px 430px;
+        }
+        .butao-redefinir-senha{
+            width: 45.4%;
+            margin: 0px 430px;
+        }
+    }
+    

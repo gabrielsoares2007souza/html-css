@@ -1,112 +1,125 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
 
-:root{
-    --cor1: #D3985E;
-    --cor2: #F4BB6E;
-    --cor3: #C89D70;
-    --cor4: #866F44;
-    --cor5: #DB9C25;
-    --font1: Arial, Helvetica, sans-serif; 
-    --font2: "Sriracha", verdana;
-}
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
-body{
-    font-family: var(--font1);
-    background-color: #b98420;
-    
-}
-main{
-    background-color: white;
-    width: 250px;
-    height: 550px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 30px;
-}
-#img{
-    width: 100%;
-    height: 170px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../imagens/img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-}
-main>h1{
-    font-family: var(--font2);
-    font-style: normal;
-    font-weight: 500;
-    font-variant: small-caps;
-    font-size: 2.4em;
-    text-align: center;
-}
-main>p{
-    width: 200px;
-    text-align: justify;
-    display: block;
-    margin: auto;
-    line-height: 1.4em;
-    padding: 10px;
-}
-.caixa{
-    background-color: var(--cor4);
-    border-radius: 10px;
-    display: block;
-    margin:  5px 8px;
-    position: relative;
-}
-.material-symbols-outlined{
-    color: white;
-    font-size: xx-large;
-    position: absolute;
-    left: 4px;
-    top: 5px;
-}
-.caixa-input{
-    background-color: var(--cor5);
-    border: none;
-    border-radius: 10px;
-    margin: 5px 40px;
-    padding: 10px 0px;
-    width: 80%;
-}
-.butao-entrar{
-    display: block;
-    margin: auto;
-    width: 94%;
-    border: none;
-    background-color: #463a23da;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    font-variant: small-caps;
-    font-family: var(--font1);
-    font-size: 1em;
-}
-.butao-entrar:hover{
-    background-color: #977d4cda;
-    transition: all 0.35s;
-}
-.butao-redefinir-senha{
-    display: block;
-    margin: 5px auto;
-    width: 94%;
-    border: none;
-    background-color: #db9b259c;
-    padding: 13px;
-    border-radius: 10px;
-    color: white;
-    font-variant: small-caps;
-    font-family: var(--font1);
-    font-size: 1em;
-}
-.butao-redefinir-senha:hover{
-    background-color: #835d179c;
-    transition: all 0.35s;
-}
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
+    :root{
+        --cor1: #D3985E;
+        --cor2: #F4BB6E;
+        --cor3: #C89D70;
+        --cor4: #866F44;
+        --cor5: #DB9C25;
+        --font1: Arial, Helvetica, sans-serif; 
+        --font2: "Sriracha", verdana;
+    }
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        font-family: var(--font1);
+        background-color: #b98420;
+    }
+    .conteiner-main{
+        position: relative;
+    }
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , 8%);
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 250px;
+        height: 550px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    }
+    .img{
+        width: 250px;
+        height: 170px;
+        border-radius: 30px 30px 0px 0px;
+        background-image: url(../imagens/img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+    }
+    main>h1{
+        font-family: var(--font2);
+        font-style: normal;
+        font-weight: 500;
+        font-variant: small-caps;
+        font-size: 2.4em;
+        text-align: center;
+    }
+    main>p{
+        width: 200px;
+        text-align: justify;
+        display: block;
+        margin: auto;
+        line-height: 1.4em;
+        padding: 10px;
+    }
+    .caixa{
+        background-color: var(--cor4);
+        border-radius: 10px;
+        display: block;
+        margin:  5px 8px;
+        position: relative;
+    }
+    .material-symbols-outlined{
+        color: white;
+        font-size: xx-large;
+        position: absolute;
+        left: 4px;
+        top: 5px;
+    }
+    .caixa-input{
+        background-color: var(--cor5);
+        border: none;
+        border-radius: 10px;
+        margin: 5px 40px;
+        padding: 10px 0px;
+        width: 80%;
+    }
+    .butao-entrar{
+        display: block;
+        margin: auto;
+        width: 94%;
+        border: none;
+        background-color: #463a23da;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        font-variant: small-caps;
+        font-family: var(--font1);
+        font-size: 1em;
+    }
+    .butao-entrar:hover{
+        background-color: #977d4cda;
+        transition: all 0.35s;
+    }
+    .butao-redefinir-senha{
+        display: block;
+        margin: 5px auto;
+        width: 94%;
+        border: none;
+        background-color: #db9b259c;
+        padding: 13px;
+        border-radius: 10px;
+        color: white;
+        font-variant: small-caps;
+        font-family: var(--font1);
+        font-size: 1em;
+    }
+    .butao-redefinir-senha:hover{
+        background-color: #835d179c;
+        transition: all 0.35s;
+    }
+    .butao-redefinir-senha>a{
+        text-decoration: none;
+        color: white;
+    }
