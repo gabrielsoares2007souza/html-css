@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        *{
+            margin: 0px; 
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body,html{
+            width: 100vw;
+            height: 100vh;
+        }
+        #conteiner{
+            background-color: lightgreen;
+            height: 500px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #content{
+            width: 80px;
+            height: 80px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Centralização de itens com alinhamento em relação aos eixos do flex-contêiner</h1>
+    <br>
+    <div id="conteiner">
+        <div id="content"></div>
+    </div>
+</body>
+</html>
