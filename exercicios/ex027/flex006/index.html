@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex box alinhamento</title>
+    <title>flex itens</title>
     <style>
         section{
-            height: 400px;
-            background-color: rgb(173, 108, 10);
+            height: 300px;
             display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start; 
-            align-content: space-around;
+            align-items: flex-start;
+            background-color: gray;
         }
         div{
-            padding: 45px;
-            background-color: burlywood;
+            padding: 20px;
             border: 1px solid black;
-            text-align: center;
+            background-color: rgb(136, 107, 107);
         }
+        div#item1{
+            align-self: auto;
+            order: 3;
+        }
+        div#item2{
+            align-self: flex-start;
+        }
+        div#item3{
+            align-self: flex-end;
+        }
+        div#item4{
+            align-self: center;
+            order: 1;
+        }
+        div#item5{
+            align-self: stretch;
+        }
+        div#item6{
+            align-self: flex-end;
+            order: -1;
+        }
+        div#item7{
+            align-self: stretch;
+            order: -4;
+        }
+        div#item8{
+
+        }
+        
     </style>
 </head>
 <body>
     <main>
-        <h1>alinhamento de itens empacotados pelo eixo tranversal (cross-axis)</h1>
         <section>
-            <div>itens1</div>
-            <div>itens2</div>
-            <div>itens3</div>
-            <div>itens4</div>
-            <div>itens5</div>
+            <div id="item1">1</div>
+            <div id="item2">2</div>
+            <div id="item3">3</div>
+            <div id="item4">4</div>
+            <div id="item5">5</div>
+            <div id="item6">6</div>
+            <div id="item7">7</div>
+            <div id="item8">8</div>
         </section>
     </main>
 </body>
