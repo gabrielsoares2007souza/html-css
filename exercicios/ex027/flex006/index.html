@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box alinhamento</title>
+    <style>
+        section{
+            height: 400px;
+            background-color: rgb(173, 108, 10);
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; 
+            align-content: space-around;
+        }
+        div{
+            padding: 45px;
+            background-color: burlywood;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>alinhamento de itens empacotados pelo eixo tranversal (cross-axis)</h1>
+        <section>
+            <div>itens1</div>
+            <div>itens2</div>
+            <div>itens3</div>
+            <div>itens4</div>
+            <div>itens5</div>
+        </section>
+    </main>
+</body>
+</html>
