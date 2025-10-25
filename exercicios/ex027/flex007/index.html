@@ -8,27 +8,27 @@
         section{
             height: 300px;
             display: flex;
-            align-items: flex-start;
+            flex-flow: row wrap;
+            align-items: stretch;
             background-color: gray;
         }
         div{
             padding: 20px;
-            border: 1px solid black;
-            background-color: rgb(136, 107, 107);
+            border: 15px solid rgb(0, 255, 64);
+            background-color: #886b6b;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
     </style>
 </head>
 <body>
     <main>
+        <h1>Tamanho de itens flexiveis - flex grow e shrink</h1>
         <section>
             <div id="item1">1</div>
             <div id="item2">2</div>
             <div id="item3">3</div>
-            <div id="item4">4</div>
-            <div id="item5">5</div>
-            <div id="item6">6</div>
-            <div id="item7">7</div>
-            <div id="item8">8</div>
         </section>
     </main>
 </body>
