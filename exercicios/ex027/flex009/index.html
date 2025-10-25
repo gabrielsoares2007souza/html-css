@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex itens</title>
+    <style>
+        section{
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            background-color: gray;
+        }
+        div{
+            padding: 20px;
+            border: 1px solid #000;
+            background-color:#bb5656a8 ;
+        }
+        div#item1{
+            /* flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 150px;*/
+
+            flex: 1 2 150px;
+        }
+        div#item2{
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;*/
+
+            flex: 1 1 100px;
+        }
+        div#item3{
+            /* flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tamanho de itens flexiveis - 
+        shorthand flex
+        </h1>
+        <section>
+            <div id="item1">1</div>
+            <div id="item2">2</div>
+            <div id="item3">3</div>
+        </section>
+    </main>
+</body>
+</html>
