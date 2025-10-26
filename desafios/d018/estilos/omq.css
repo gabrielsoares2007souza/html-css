@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 700px){
+    header{
+        flex-flow: column nowrap;
+    }
+    header > #icone-menu{
+        display: block;
+    }
+    header> h1{
+        flex: 0 0 auto;
+        margin-bottom: 5px;
+    }
+    header > nav#menu{
+        flex-flow: column nowrap;
+        align-items: stretch;
+        width: 100%;
+    }
+    header > nav#menu > a{
+        margin: 3px 0px;
+    }
+}

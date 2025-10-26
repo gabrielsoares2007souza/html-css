@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu flex box</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/omq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <span id="icone-menu" class="material-symbols-outlined" onclick="menuClick()">
+        menu
+        </span>
+        <nav id="menu">
+            <a href="#">opção 1</a>
+            <a href="#">opção 2</a>
+            <a href="#">opção 3</a>
+            <a href="#">opção 4</a>
+            <a href="#">opção 5</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Criando um site com flex box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit voluptate vero nostrum unde obcaecati eos adipisci quaerat aliquam corrupti, asperiores autem iste maxime voluptatem perferendis nobis labore animi? Exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod eaque enim, quam iusto laboriosam, necessitatibus sapiente tempore corporis itaque amet quisquam. Repellendus eaque dolor veniam labore doloribus perferendis eum!</p>
+    </main>
+    <script>
+        function menuClick(){
+            if (menu.style.display == 'flex'){
+                menu.style.display = 'none'
+            }
+            else {
+                menu.style.display = 'flex'
+            }
+        }
+    </script>
+</body>
+</html>
