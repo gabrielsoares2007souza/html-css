@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/omq.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body id="telamudou" onresize="telaMudou()">
     <header>
         <h1>meu site</h1>
         <span id="icone-menu" class="material-symbols-outlined" onclick="menuClick()">
@@ -33,6 +33,13 @@
             }
             else {
                 menu.style.display = 'flex'
+            }
+        }
+        function telaMudou(){
+            if (window.innerWidth >= 700){
+                menu.style.display = 'flex'
+            } else {
+                menu.style.display = 'none'
             }
         }
     </script>
