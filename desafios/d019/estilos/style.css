@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(172, 172, 172);
+    height: 100vh;
+}
+header {
+    background-color: grey;
+}
+header > h1{
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.6em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.507);
+}
+main#caixa-principal{
+    background-color: white;
+}
+div.conteudo-normal > h2{
+    font-size: 1.35em;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+div.conteudo-normal > p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.4em;
+    margin: 10px;
+}
+div#conteiner-flexivel{
+    background-color: gainsboro;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.conteudof-texto{
+    flex: 0 1 500px;
+    
+}
+div.conteudof-texto > h3{
+    font-size: 1.2em;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+div.conteudof-texto > p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.4em;
+    margin: 10px;
+}
+div.conteudof-extra {
+    flex: 0 1 400px;
+}
