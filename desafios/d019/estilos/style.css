@@ -41,9 +41,18 @@ div.conteudo-normal > p{
 div#conteiner-flexivel{
     background-color: gainsboro;
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+article.midia-texto{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+}
+article.texto-midia{
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: stretch;
 }
 div.conteudof-texto{
     flex: 0 1 400px;
