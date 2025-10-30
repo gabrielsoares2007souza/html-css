@@ -24,6 +24,8 @@ header > h1{
 }
 main#caixa-principal{
     background-color: white;
+    width: 85vw;
+    margin: auto;
 }
 div.conteudo-normal > h2{
     font-size: 1.35em;
@@ -41,10 +43,11 @@ div#conteiner-flexivel{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
 }
 div.conteudof-texto{
-    flex: 0 1 500px;
+    flex: 0 1 400px;
+    background-color: rgba(128, 128, 128, 0.425);
     
 }
 div.conteudof-texto > h3{
@@ -60,4 +63,22 @@ div.conteudof-texto > p{
 }
 div.conteudof-extra {
     flex: 0 1 400px;
+}
+footer{
+    background-color: rgb(66, 66, 66);
+    margin-top: -10px;
+}
+footer > p{
+    text-align: center ;
+    padding: 10px;
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    cursor: default;
+}
+span#myname:hover{
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
 }
