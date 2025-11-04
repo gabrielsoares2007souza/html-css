@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de site </title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            font-size: 1em;
+            text-align: center;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        .conteiner{
+            background-color: lightgrey;
+            border: 1px dashed red;
+            display: grid;
+            grid-template-rows: 1fr 0.6fr 4fr 0.6fr;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+        }
+        header{
+            grid-area: 1 / 1 / span 1  / -1;
+            background-color: gray;
+        }
+        nav{
+            grid-area: 2 / 1 / span 1 / -1;
+            background-color: gray;
+        }
+        article{
+            grid-area: 3 / 1 / -2 / -2;
+            background-color: gray;
+        }
+        aside{
+            grid-area: 3 / -2 / -2 / -1;
+            background-color: gray;
+        }
+        footer{
+            grid-area: -2 / 1 / -1 / -1 ;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <header>TOPO</header>
+        <nav>MENU</nav>
+        <article>PRINCIPAL</article>
+        <aside>SECUNDARIO</aside>
+        <footer>RODAPE</footer>
+    </div>
+</body>
+</html>
