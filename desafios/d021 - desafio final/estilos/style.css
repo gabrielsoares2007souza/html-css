@@ -14,14 +14,17 @@
   margin:0;
   padding:0;
 }
-
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--fundo-principal);
+}
 header{
   background-color: var(--destaque);
   color: var(--texto);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
 }
 nav#menu ul{
   list-style: none;
@@ -32,11 +35,61 @@ nav#menu a{
   text-decoration: none;
   color: var(--texto-inverso);
   border-radius: 7px;
-  padding: 10px;
+  padding: 12px 15px;
 
   transition: background-color 0.5s linear, color 0.5s linear;
 }
 nav#menu a:hover{
   color: var(--texto);
   background-color: var(--destaque-inverso);
+}
+
+main{
+  display: grid;
+  grid-template-columns: auto 90% auto;
+}
+section#ficha{
+  background-color: var(--fundo-card);
+  padding: 10px;
+  border-radius: 7px;
+  grid-column: 2;
+  margin-top: 20px;
+}
+section#ficha img.foto{
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: 15px auto;
+}
+section#ficha h1{
+  margin: 15px 0px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+section#ficha p{
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+div#social{
+  display: flex;
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 5px;
+}
+div#social a{
+  color: var(--destaque);
+
+  transition: color 0.5s linear;
+  
+}
+div#social a:hover{
+  color: var(--destaque-inverso);
 }
