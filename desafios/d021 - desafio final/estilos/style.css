@@ -163,10 +163,4 @@ section#detalhes h2{
   #skills-conteiner{
     grid-template-columns: 1fr 1fr;
   }
-  .habilidades1{
-    grid-column: 1 / 2;
-  }
-  .habilidades2{
-    grid-column: 2 / -1;
-  }
 }
