@@ -113,16 +113,60 @@ section#detalhes h2{
   padding: 5px 10px;
 }
 #video-conteiner{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    aspect-ratio: 16 / 9;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
 }
 #video-conteiner iframe{
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    width: 90%;
-    height: 80%;
-    border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+#skills-conteiner{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#skills-conteiner .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+#skills-conteiner .nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+#skills-conteiner .porcentagem{
+  font-weight: bold;
+  color: var(--destaque);
+}
+#skills-conteiner .barra{
+  width: 100%;
+  height: 10px;
+  margin-top: 5px;
+  background-color: var(--fundo-principal);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#skills-conteiner .progresso{
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills-conteiner{
+    grid-template-columns: 1fr 1fr;
+  }
+  .habilidades1{
+    grid-column: 1 / 2;
+  }
+  .habilidades2{
+    grid-column: 2 / -1;
+  }
 }
