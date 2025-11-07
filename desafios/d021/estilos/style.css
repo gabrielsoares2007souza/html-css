@@ -74,7 +74,7 @@ section#ficha h1{
 }
 section#ficha p{
   line-height: 1.5em;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 div#social{
   display: flex;
@@ -134,11 +134,11 @@ section#detalhes h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
 }
 #skills-conteiner .nome{
   font-weight: bold;
   color: var(--texto);
+  font-size: 0.8em;
 }
 #skills-conteiner .porcentagem{
   font-weight: bold;
@@ -146,11 +146,10 @@ section#detalhes h2{
 }
 #skills-conteiner .barra{
   width: 100%;
-  height: 10px;
+  height: 6px;
   margin-top: 5px;
   background-color: var(--fundo-principal);
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 #skills-conteiner .progresso{
   height: 100%;
@@ -224,6 +223,7 @@ section#detalhes h2{
 }
 #projetos-conteiner .descricao{
   font-size: 0.8em;
+  line-height: 1.5em;
 }
 #projetos-conteiner details{
   font-size: 0.8em;
