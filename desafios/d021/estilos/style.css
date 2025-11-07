@@ -25,6 +25,9 @@ header{
   justify-content: flex-end;
   align-items: center;
   padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 nav#menu ul{
   list-style: none;
@@ -96,11 +99,12 @@ div#social a:hover{
 
 section#detalhes{
   grid-column: 2;
+  padding: 20px;
 }
 
 section#detalhes article{
   background-color: var(--fundo-card);
-  padding: 10px;
+  padding: 20px;
   margin: 20px 0px;
   border-radius: 7px;
 }
@@ -214,7 +218,7 @@ section#detalhes h2{
   border-radius: 10px;
 }
 #projetos-conteiner .periodo{
-  font-size: 0.8em;
+  font-size: 1em;
 }
 #projetos-conteiner .titulo{
   font-size: 1em;
@@ -252,6 +256,24 @@ footer .link-destaque:hover{
 }
 
 @media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  section#ficha{
+    grid-column: 2 / 3;
+    position: sticky;
+    height: fit-content;
+    top: 85px;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  section#ficha p{
+    font-size: 1em;
+  }
+  section#detalhes{
+    grid-column: 3 / 4;
+  }
+  
   #skills-conteiner{
     grid-template-columns: 1fr 1fr;
   }
